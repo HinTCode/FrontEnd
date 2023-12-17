@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Vertical</title>
+    <style>
+        .hmenu{margin:0px; padding:10px 0 0 0 ; border-radius:5px; box-shadow: 0 0 5px orangered; list-style: none; background-color: orangered; height:60px;
+                font-variant:small-caps; text-align:center;}
+        ul.hmenu>li>a{display:block; line-height: 40px; text-decoration:none; font-variant: small-caps; padding: 0 25px; color: white;}
+        ul.hmenu>li>a:hover{color:yellow; font-weight: bolder;}
+        ul.hmenu>li{float:left; margin: 0 5px; position: relative; display:inline-block;}
+        ul.hmenu>li:hover>.sub-menu{display:block;}
+        .sub-menu{margin:0px; padding:0px; border-radius:5px; box-shadow:0 0 5px orangered; list-style: none; width: 150px; position: absolute; display:none;}
+        .sub-menu>li>a{display:block; line-height: 30px; border-bottom: 1px dotted orangered; text-decoration: none; font-variant: small-caps; padding-left: 25px; 
+            background: url('') no-repeat left center; color: orangered;}
+        .sub-menu>li>a:hover{background: url('') no-repeat left center; color:red; font-weight:bolder;}
+
+        .hmenu ul{width: 170px; padding:0px; margin:0px; list-style:none; background-color:white; font-variant:small-caps; text-align:left; border-radius:3px; 
+            box-shadow: 0 0 1px gray; position:absolute; display:none;}
+        .hmenu ul>li>a{display:block; line-height:30px;color:orangered; text-decoration:none; padding:0 5px; border-bottom:1px dotted lightgray;}
+
+
+    </style>
+</head>
+<body>
+    <!-- Menu Vertical -->
+    <ul class="hmenu">
+        <li>
+            <a href="#">
+                <img src="#" alt="" style="width:50px;height:50px">
+            </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a>
+            <ul class="sub-menu">
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item4</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Q&A</a></li>
+    </ul>
+    <!-- Menu Vertical -->
+</body>
+</html>

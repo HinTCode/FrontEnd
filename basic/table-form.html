@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+    <style>
+        .button{border:none; border-radius:30px; box-shadow:0 0 3px gray; padding: 5px 10px; outline: none;}
+        .button:focus{box-shadow:0 0 3px orangered; color:orangered;}
+
+        .table{border-collapse: collapse;}
+        tr:nth-child(2n+1){background-color: gray;}
+        tr:nth-child(2n){background-color: gainsboro;}
+        tr:first-child{color: white;}
+        tr:last-child{color: orangered;}
+    </style>
+</head>
+<body>
+    <!-- Table Form -->
+    <form action="" method="">
+        <div class="form-group">
+            <input type="text" class="form-control" name="id" id="id" placeholder="Keyword"/>
+            <button type="submit" class="button">Search</button>
+        </div>
+        <!-- <br /> -->
+        <table border="1">
+            <caption>List</caption>
+            <thead>
+                <tr>
+                    <th align="middle">Index</th>
+                    <th colspan="2">Full Name</th>
+                    <!-- <th>#</th> for col -->
+                    <th rowspan="2">Birthday</th>
+                </tr>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <!-- <th>#</th> for row -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="middle">1</td>
+                    <td>Hoàng</td>
+                    <td>Nguyễn Minh</td>
+                    <th>25/04/1998</th>
+                </tr>
+                <tr>
+                    <td align="middle">1</td>
+                    <td>Hoàng</td>
+                    <td>Nguyễn Minh</td>
+                    <th>25/04/1998</th>
+                </tr>
+                <tr>
+                    <td align="middle">1</td>
+                    <td>Hoàng</td>
+                    <td>Nguyễn Minh</td>
+                    <th>25/04/1998</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" align="middle">something</td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+    <!-- Tablen Form -->
+</body>
+</html>

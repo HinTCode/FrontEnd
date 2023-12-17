@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        .form-group{margin:10px 2px;}
+        .form-control{margin:3px 0px; padding:5px; border:none; width:200px; border-radius: 3px; box-shadow: 0 0 3px blue; color:orangered; display: block; outline: none;}
+        .form-control:focus{box-shadow: 0 0 3px orangered;}
+        .button{border:none; border-radius:30px; box-shadow:0 0 3px gray; padding: 5px 10px; outline: none;}
+        .button:focus{box-shadow:0 0 3px orangered; color:orangered;}
+    </style>
+</head>
+<body>
+    <!-- Sign Up Form -->
+    <form action="" method="">
+        <div class="form-group">
+            <label>Username</label><br />
+            <input type="text" class="form-control" name="username" id="username" placeholder="Username"
+            readonly disabled tabindex="1"/>
+        </div>
+        <div class="form-group">
+            <label>Password</label><br />
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password"/>
+        </div>
+        <div class="form-group">
+            <label>Full name</label><br />
+            <input type="text" class="form-control" name="name" id="name" placeholder="Full name"/>
+        </div>
+        <div class="form-group">
+            <label>Email</label><br />
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email"/>
+        </div>
+        <!-- <br /> -->
+        <div class="form-group">
+            <label>Birthday</label><br />
+            <input type="date" class="form-control" name="birthday" id="birthday" />
+            <!-- type="date/time/week/color/number/range/email" -->
+            <!-- number min="1" max="10" (tùy) -->
+            <!-- range min="1" max="10" (bắt buộc) step="1"-->
+        </div>
+        <!-- <br /> -->
+        <div class="form-group">
+            <label>Country</label><br />
+            <input list="country" placeholder="Country"/>
+            <datalist id="country">
+                <option value="Việt Nam"></option>
+                <option value="Other"></option>
+            </datalist>
+        </div>
+        <fieldset class="form-group" style="width:330px;">
+            <legend>Gender</legend>
+            <label>
+                <input type="radio" name="gender" id="gender" />Male
+            </label>
+            <input type="radio" name="gender" id="F" />
+            <label for="F">Female</label>
+        </fieldset>
+        <fieldset class="form-group" style="width:330px;">
+            <legend>Hobbies</legend>
+            <label>
+                <input type="checkbox" name="hobbies" id="hobbies" />Code
+            </label>
+            <label>
+                <input type="checkbox" name="hobbies" id="hobbies" />Game
+            </label>
+            <label>
+                <input type="checkbox" name="hobbies" id="hobbies" />Game Coding
+            </label>
+        </fieldset>
+        <div class="form-group">
+            <label>Note:</label><br />
+            <textarea rows="5" cols="40"></textarea>
+        </div>
+        <hr style="width:330px;" align="left"/>
+        <div class="form-group">
+                <button type="submit" class="button">Sign Up</button>
+                <button type="button" class="button" class="" name="" id="">Sign In</button>
+                <button type="reset" class="button">Cancel</button>
+        </div>
+    </form>
+    <!-- Sign Up Form -->
+</body>
+</html>
